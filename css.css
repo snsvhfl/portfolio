@@ -1,0 +1,52 @@
+ul#second{
+    position:absolute;
+    left:200px;
+    width:100px;
+}
+
+ul#third{
+    position:fixed;
+    left:300px;
+    width:100px;
+}
+
+div{
+    position:relative;
+    width:400px;
+    margin:0 auto;
+}
+
+body{
+    height:3000px;
+}
+
+ul#first{
+    position:fixed;
+    width:400;
+}
+
+ul.sub{
+    position:absolute;
+    width:300px;
+    background-color:white;
+    left:-400px;
+    color:white;
+    transition-duration: 0.5s;
+}
+ul.cub{
+    position:absolute;
+    width:300px;
+    background-color:white;
+    left:1000px;
+    color:white;
+    transition-duration: 0.5s;
+}
+
+ul#first > li:hover > ul.sub{
+    background-color:blue;
+    left:500px;
+}
+ul#first > li:hover > ul.cub{
+    background-color:blue;
+    left:200px;
+}
